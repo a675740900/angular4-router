@@ -1,0 +1,42 @@
+.full-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .nav {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        background: #e5e5e5;
+        .nav-group {
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            li {
+                padding: 0 20px;
+                color: #ffffff;
+                border-right: 1px solid #ddd;
+                cursor: pointer;
+                &:last-child {
+                    border-right: none;
+                }
+                &.active {
+                    background: #333;
+                }
+            }
+        }
+    }
+    .content {
+        width: 1200px;
+        flex: 1;
+        background: deeppink;
+        margin: 0 auto;
+    }
+}
